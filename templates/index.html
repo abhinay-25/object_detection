@@ -9,6 +9,8 @@
         .lane-box { margin: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 16px; }
         .lane-title { text-align: center; margin-bottom: 8px; }
         img { display: block; margin: 0 auto; border-radius: 4px; max-width: 480px; max-height: 320px; }
+        .upload-form { margin-top: 10px; text-align: center; }
+        .upload-label { display: block; margin: 8px 0 4px; }
     </style>
 </head>
 <body>
@@ -18,6 +20,13 @@
         <div class="lane-box">
             <h2 class="lane-title">Lane {{ lane }}</h2>
             <img src="{{ url_for('video_feed', lane_id=lane) }}" alt="Lane {{ lane }} Live Stream">
+            <form class="upload-form" action="{{ url_for('upload_lane', lane_id=lane) }}" method="post" enctype="multipart/form-data">
+                <label class="upload-label">Upload Video (.mp4):</label>
+                <input type="file" name="video" accept="video/mp4">
+                <label class="upload-label">Upload Audio (.mp3 or .wav):</label>
+                <input type="file" name="audio" accept="audio/*">
+                <button type="submit">Upload Lane {{ lane }}</button>
+            </form>
         </div>
         {% endfor %}
     </div>
