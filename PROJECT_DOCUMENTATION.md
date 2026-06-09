@@ -1532,10 +1532,10 @@ jobs:
 
 This **Intelligent Traffic Monitoring System** demonstrates:
 - ✅ Real-time computer vision applications
-- ✅ Multi-modal AI (video + audio)
+- ✅ Multi-modal AI (video + audio)   
 - ✅ Cloud integration and real-time databases
 - ✅ System design and optimization
-- ✅ Edge case handling
+- ✅ Edge case handling   
 - ✅ Production-ready architecture  
 
 Perfect for interviews discussing **Full-Stack ML Engineering**, **Real-Time Systems**, **Computer Vision**, or **System Design**.
