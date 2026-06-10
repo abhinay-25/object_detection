@@ -17,7 +17,7 @@ app.config['UPLOAD_FOLDER'] = os.path.join(os.path.dirname(__file__), 'uploads')
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
 # Initialize YOLOv8 model (vehicle detection)
-model = YOLO('yolov8n.pt')  # Nano model for speed
+model = YOLO('yolov8n.pt')  # Nano model for speed     
 
 # Initialize Firebase only once
 def init_firebase():
