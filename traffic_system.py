@@ -4,7 +4,7 @@ from ultralytics import YOLO
 import time
 from flask import Flask, render_template, Response, request, redirect, url_for, send_from_directory
 import firebase_admin
-from firebase_admin import credentials, db
+from firebase_admin import credentials, db    
 import os
 import tempfile
 import pickle
