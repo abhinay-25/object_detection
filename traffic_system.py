@@ -19,7 +19,7 @@ os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 # Initialize YOLOv8 model (vehicle detection)
 model = YOLO('yolov8n.pt')  # Nano model for speed     
 
-# Initialize Firebase only once
+# Initialize Firebase only once      
 def init_firebase():     
     if not firebase_admin._apps:
         firebase_key_json = os.environ.get('FIREBASE_KEY_JSON')
