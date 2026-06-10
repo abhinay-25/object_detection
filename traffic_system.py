@@ -23,7 +23,7 @@ model = YOLO('yolov8n.pt')  # Nano model for speed
 def init_firebase():     
     if not firebase_admin._apps:
         firebase_key_json = os.environ.get('FIREBASE_KEY_JSON')
-        if not firebase_key_json:
+        if not firebase_key_json:           
             # Fallback: try to read from file
             key_path = os.path.join(os.path.dirname(__file__), 'FIREBASE_KEY_JSON')
             if os.path.exists(key_path):
