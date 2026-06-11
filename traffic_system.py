@@ -39,7 +39,7 @@ def init_firebase():
         firebase_admin.initialize_app(cred, {     
             'databaseURL': 'https://hackathonproject-8b9db-default-rtdb.asia-southeast1.firebasedatabase.app/'   
         })
-
+          
 init_firebase()
 
 class ETAEstimator:
