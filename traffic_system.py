@@ -36,7 +36,7 @@ def init_firebase():
             temp_key_file.write(firebase_key_json)     
             temp_key_path = temp_key_file.name
         cred = credentials.Certificate(temp_key_path)
-        firebase_admin.initialize_app(cred, {
+        firebase_admin.initialize_app(cred, {     
             'databaseURL': 'https://hackathonproject-8b9db-default-rtdb.asia-southeast1.firebasedatabase.app/'
         })
 
