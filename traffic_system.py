@@ -32,7 +32,7 @@ def init_firebase():
             else:
                 raise RuntimeError("FIREBASE_KEY_JSON environment variable not set and FIREBASE_KEY_JSON file not found.")
         # Write the JSON key to a temporary file
-        with tempfile.NamedTemporaryFile(delete=False, mode='w', suffix='.json') as temp_key_file:
+        with tempfile.NamedTemporaryFile(delete=False, mode='w', suffix='.json') as temp_key_file:    
             temp_key_file.write(firebase_key_json)
             temp_key_path = temp_key_file.name
         cred = credentials.Certificate(temp_key_path)
