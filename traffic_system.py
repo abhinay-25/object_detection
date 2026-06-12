@@ -48,7 +48,7 @@ class ETAEstimator:
         try:
             if model_path:
                 with open(model_path, 'rb') as f:
-                    self.model = pickle.load(f)
+                    self.model = pickle.load(f)                      
         except Exception as e:
             print(f"ETAAstimator: Failed to load model: {e}. Using fallback rules.")
 
