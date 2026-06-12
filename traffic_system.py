@@ -41,7 +41,7 @@ def init_firebase():
         })
                 
 init_firebase()           
-
+                                 
 class ETAEstimator:
     def __init__(self, model_path=None):                  
         self.model = None
