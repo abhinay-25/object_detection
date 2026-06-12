@@ -40,7 +40,7 @@ def init_firebase():
             'databaseURL': 'https://hackathonproject-8b9db-default-rtdb.asia-southeast1.firebasedatabase.app/'      
         })
                 
-init_firebase()
+init_firebase()           
 
 class ETAEstimator:
     def __init__(self, model_path=None):
