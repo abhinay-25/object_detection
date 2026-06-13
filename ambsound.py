@@ -7,7 +7,7 @@ import sounddevice as sd
 import queue
 import time
 import soundfile as sf
-
+          
 SAMPLE_RATE = 22050
 DURATION = 3  # seconds per chunk
 N_MFCC = 13
