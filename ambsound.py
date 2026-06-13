@@ -12,7 +12,7 @@ SAMPLE_RATE = 22050
 DURATION = 3  # seconds per chunk
 N_MFCC = 13
 MODEL_PATH = 'ambulance_sound_model.joblib'
-THRESHOLD = 0.9  # Confidence threshold for ambulance detection
+THRESHOLD = 0.9  # Confidence threshold for ambulance detection          
 
 q = queue.Queue()
 
