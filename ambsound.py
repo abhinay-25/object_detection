@@ -31,7 +31,7 @@ def predict(features, clf):
     if proba[1] >= THRESHOLD:
         print(f"AMBULANCE DETECTED! Confidence: {proba[1]:.2f}")
     else:
-        print(f"No ambulance. Confidence: {proba[1]:.2f}")
+        print(f"No ambulance. Confidence: {proba[1]:.2f}")               
 
 def mic_mode():
     print("Available input devices:")
