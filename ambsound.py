@@ -26,7 +26,7 @@ def extract_features_from_file(file_path, n_mfcc=N_MFCC, sample_rate=SAMPLE_RATE
     return extract_features_from_audio(y, sample_rate, n_mfcc)                     
 
 def predict(features, clf):
-    features = features.reshape(1, -1)
+    features = features.reshape(1, -1)                  
     proba = clf.predict_proba(features)[0]
     if proba[1] >= THRESHOLD:
         print(f"AMBULANCE DETECTED! Confidence: {proba[1]:.2f}")
