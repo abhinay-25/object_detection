@@ -18,7 +18,7 @@ q = queue.Queue()
 
 def extract_features_from_audio(audio, sample_rate=SAMPLE_RATE, n_mfcc=N_MFCC):
     mfcc = librosa.feature.mfcc(y=audio, sr=sample_rate, n_mfcc=n_mfcc)
-    mfcc_mean = np.mean(mfcc.T, axis=0)
+    mfcc_mean = np.mean(mfcc.T, axis=0)                     
     return mfcc_mean
 
 def extract_features_from_file(file_path, n_mfcc=N_MFCC, sample_rate=SAMPLE_RATE):
