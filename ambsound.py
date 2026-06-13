@@ -34,7 +34,7 @@ def predict(features, clf):
         print(f"No ambulance. Confidence: {proba[1]:.2f}")               
 
 def mic_mode():                     
-    print("Available input devices:")
+    print("Available input devices:")               
     devices = sd.query_devices()
     input_devices = [(i, d['name']) for i, d in enumerate(devices) if d['max_input_channels'] > 0]
     for idx, name in input_devices:
