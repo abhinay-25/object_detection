@@ -21,7 +21,7 @@ def extract_features_from_audio(audio, sample_rate=SAMPLE_RATE, n_mfcc=N_MFCC):
     mfcc_mean = np.mean(mfcc.T, axis=0)                     
     return mfcc_mean
 
-def extract_features_from_file(file_path, n_mfcc=N_MFCC, sample_rate=SAMPLE_RATE):
+def extract_features_from_file(file_path, n_mfcc=N_MFCC, sample_rate=SAMPLE_RATE):              
     y, sr = librosa.load(file_path, sr=sample_rate)
     return extract_features_from_audio(y, sample_rate, n_mfcc)
 
